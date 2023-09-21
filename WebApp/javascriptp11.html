@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <ul>
+            <li>List1</li>
+            <li>List2</li>
+            <li>List3</li>
+            <li>List4</li>
+        </ul>
+        <p id="d1"></p>
+        <!-- <script>
+             const col1=document.getElementsByTagName("li");
+             document.getElementById("d1").innerHTML=col1[1].innerHTML;
+        </script> -->
+        <script>
+            const col1=document.getElementsByTagName("*");
+            let text=""
+            for(let i=0;i<col1.length;i++)
+            {
+                text+=col1[i].tagName+"<br>";
+            }
+            document.getElementById("d1").innerHTML=text;
+        </script>
+    </body>
+</html>
